@@ -1,0 +1,203 @@
+@import './utils/sass/mixins.sass'
+$primary: #E80459
+$secondary: #D7F3F7
+$complementary: #33044A
+$backgroud: #F8F8F8F8
+html
+  background-color: $backgroud
+.container
+  height: auto
+  width: 100%
+.row
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  width: 80%
+  margin-left: auto
+  margin-right: auto
+  margin-top: 24px
+  @include sm
+    width: 90%
+header
+  height: auto
+  width: 100%
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+header h1
+  @include xl
+    width: 568px
+    margin-left: 48px
+    color: $complementary
+  @include md
+      width: 568px
+      margin-left: 48px
+      color: $complementary
+      margin-bottom: 8px
+      margin-top: 64px
+  @include sm
+    color: $complementary
+    text-align: center
+    margin-bottom: 8px
+header h3
+  @include xl
+    width: 568px
+    margin-left: 48px
+    color: $complementary
+  @include md
+    width: 568px
+    margin-left: 48px
+    margin-top: 0px
+    color: $complementary
+  @include sm
+    color: $complementary
+    text-align: center
+    margin-top: 0px
+.circle
+  @include xl
+    height: 150px
+    width: 150px
+    background-color: $secondary
+    border-radius: 50%
+  @include md
+    height: 150px
+    width: 150px
+    background-color: $secondary
+    border-radius: 50%
+  @include sm
+    height: 150px
+    width: auto
+    background-color: $secondary
+    border-radius: 14px
+.line
+  @include xl
+    height: 2px
+    width: 80%
+    background-color: $primary
+    margin-left: auto
+  @include md
+    margin-top: 16px
+    height: 2px
+    width: 100%
+    background-color: $primary
+  @include sm
+    margin-top: 16px
+    height: 2px
+    width: 100%
+    background-color: $primary
+section
+  @include xl
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    height: auto
+    width: 80%
+    align-items: center
+    margin-left: auto
+  @include lg
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    height: auto
+    width: 80%
+    align-items: center
+    margin-left: auto
+  @include md
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    height: auto
+    width: 100%
+    align-items: center
+    margin-left: auto
+  @include sm
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+    height: auto
+    width: 100%
+    align-items: center
+    margin-left: auto
+h1, h2, h3, h4
+  color: $complementary
+h4
+  height: auto
+  width: 100%
+  display: flex
+  justify-content: flex-start
+.generic-container
+  height: auto
+  width: 100%
+  display: flex
+  justify-content: space-around
+  align-items: flex-start
+  flex-direction: row
+  flex-wrap: wrap
+.left
+  @include lg
+    height: auto
+    width: 20%
+  @include sm
+    height: auto
+    width: 100%
+    text-align: center
+.right
+  @include lg
+    height: auto
+    width: 80%
+  @include md
+    height: auto
+    width: 100%
+  @include sm
+    height: auto
+    width: 100%
+p
+  line-height: 1.5
+.skills
+  margin-right: 8px
+.skills span::before
+  content: "♥ "
+  font-size: 18px
+  color: $complementary
+.skills span
+  @include xl
+    padding: 6px 6px 6px 6px
+    margin: 8px 8px 8px 0px
+    background-color: $secondary
+    border-radius: 16px
+    border: 1px solid $complementary
+  @include md
+    width: auto
+    padding: 6px 6px 6px 6px
+    margin: 8px 8px 8px 0px
+    background-color: $secondary
+    border-radius: 16px
+    border: 1px solid $complementary
+  @include sm
+    width: auto
+    padding: 6px 6px 6px 6px
+    margin: 8px 8px 8px 0px
+    background-color: $secondary
+    border-radius: 16px
+    border: 1px solid $complementary
+.skills
+  @include xl
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  @include lg
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  @include md
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  @include sm
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
